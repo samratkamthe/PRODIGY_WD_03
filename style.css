@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    padding: 28px;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    /* margin-top: 159px; */
+    margin: 90px auto;
+    align-items: center;
+    /* border: 2px solid black; */
+    background: yellow;
+  }
+  
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .container button {
+    height: 77px;
+    width: 77px;
+    border:none;
+  
+  
+  
+  }
+  
+  .btn {
+    margin: 2px 0px;
+    background-color: white;
+  }
+  .block{
+    box-sizing: border-box;
+  
+
+}
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+    background-color: white;
+    color: black; 
+    border: 2px solid black;
+    border: none;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+body::before{
+    content: "";
+   
+    height:105%;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    background: center/cover no-repeat url('https://i.etsystatic.com/20084431/r/il/13ceed/3089571779/il_1588xN.3089571779_tos1.jpg');
+    opacity:0.5;
+}
+.hs{
+   
+    /* padding: 10px; */
+    /* padding-top: 20px; */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: bisque;
+    
+}
+#text{
+    padding:5px;
+    display: block;
+    margin: 0 auto;
+    width: 254px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: olivedrab;
+    color: black;
+
+
+
+
+}
+.retryy{
+       /* position: relative; */
+       padding-bottom: 0px;
+       /* padding-bottom: 40px; */
+       margin: 0px auto;
+       display: block;
+       height: 45px;
+       width: 77px;
+
+}
+#retry{
+    height:45px;
+    width: 75px;
+    align-items: center;
+}
