@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -68,24 +69,24 @@ body::before{
 }
 .hs{
    
-    /* padding: 10px; */
-    /* padding-top: 20px; */
+ padding: 5px;
     text-align: center;
     margin-bottom: 20px;
-    background-color: bisque;
+    background-color: #bed8da;
+    font-family: cursive;
     
 }
 #text{
-    padding:5px;
-    display: block;
-    margin: 0 auto;
-    width: 254px;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: olivedrab;
-    color: black;
-
-
+  padding: 8px;
+  display: block;
+  margin: 0 auto;
+  width: 418px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: olivedrab;
+  color: black;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 
 
 }
@@ -103,4 +104,8 @@ body::before{
     height:45px;
     width: 75px;
     align-items: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
