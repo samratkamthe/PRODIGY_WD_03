@@ -1,16 +1,16 @@
-let variable = 'o';
+let variable = 'O';
 let counter = 0;
 
 const handleClick = (id) => {
     
 if(!document.getElementById(id).disabled&&counter<=8){
-if (variable === 'o') {
-    variable = 'x';
+if (variable === 'O') {
+    variable = 'X';
     document.getElementById(id).textContent = variable;
     document.getElementById(id).disabled=true;
     
   } else {
-    variable = 'o';
+    variable = 'O';
     document.getElementById(id).textContent = variable;
     document.getElementById(id).disabled=true;
 
@@ -24,7 +24,7 @@ if (variable === 'o') {
         document.getElementById("box2").style.border="2px solid black"
         document.getElementById("box3").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box1").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box1").textContent} Won!`;
 
     }
     else if(document.getElementById("box4").textContent==document.getElementById("box5").textContent&&document.getElementById("box5").textContent==document.getElementById("box6").textContent){
@@ -32,49 +32,49 @@ if (variable === 'o') {
         document.getElementById("box5").style.border="2px solid black"
         document.getElementById("box6").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box4").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box4").textContent} Won!`;
     }
     else if(document.getElementById("box7").textContent==document.getElementById("box8").textContent&&document.getElementById("box8").textContent==document.getElementById("box9").textContent){
         document.getElementById("box7").style.border="2px solid black"
         document.getElementById("box8").style.border="2px solid black"
         document.getElementById("box9").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box7").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box7").textContent} Won!`;
     }
     else if(document.getElementById("box1").textContent==document.getElementById("box4").textContent&&document.getElementById("box4").textContent==document.getElementById("box7").textContent){
         document.getElementById("box1").style.border="2px solid black"
         document.getElementById("box4").style.border="2px solid black"
         document.getElementById("box7").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box1").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box1").textContent} Won!`;
     }
     else if(document.getElementById("box2").textContent==document.getElementById("box5").textContent&&document.getElementById("box5").textContent==document.getElementById("box8").textContent){
         document.getElementById("box2").style.border="2px solid black"
         document.getElementById("box5").style.border="2px solid black"
         document.getElementById("box8").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box2").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box2").textContent} Won!`;
     }
     else if(document.getElementById("box3").textContent==document.getElementById("box6").textContent&&document.getElementById("box6").textContent==document.getElementById("box9").textContent){
         document.getElementById("box3").style.border="2px solid black"
         document.getElementById("box6").style.border="2px solid black"
         document.getElementById("box9").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box3").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box3").textContent} Won!`;
     }
     else if(document.getElementById("box1").textContent==document.getElementById("box5").textContent&&document.getElementById("box5").textContent==document.getElementById("box9").textContent){
         document.getElementById("box1").style.border="2px solid black"
         document.getElementById("box5").style.border="2px solid black"
         document.getElementById("box9").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box1").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box1").textContent} Won!`;
     }
     else if(document.getElementById("box3").textContent==document.getElementById("box5").textContent&&document.getElementById("box5").textContent==document.getElementById("box7").textContent){
         document.getElementById("box3").style.border="2px solid black"
         document.getElementById("box5").style.border="2px solid black"
         document.getElementById("box7").style.border="2px solid black"
 
-        document.getElementById('text').textContent =`player with sign ${document.getElementById("box3").textContent} won!`;
+        document.getElementById('text').textContent =`Player ${document.getElementById("box3").textContent} won!`;
     }
     else{
   document.getElementById('text').textContent ="TRY AGAIN!";
@@ -86,7 +86,7 @@ if (variable === 'o') {
 };
 
 retry=()=>{
-    variable='o';
+    variable='O';
     counter=0;
         document.getElementById("box1").textContent='.';
         document.getElementById("box2").textContent='.';
@@ -117,7 +117,7 @@ retry=()=>{
         document.getElementById("box7").style.border='none';
         document.getElementById("box8").style.border='none';
         document.getElementById("box9").style.border='none';
-        document.getElementById('text').textContent ="Player x (vs) Player o";
+        document.getElementById('text').textContent ="Player 'X' (vs) Player 'O'";
 
 
 }
